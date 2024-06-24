@@ -1,0 +1,244 @@
+
+*{
+    padding: 0;
+    margin:0;
+}
+
+.index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanho igual */
+    grid-template-rows: repeat(4, 200px);  /* 4 linhas de tamanho fixo */
+    gap: 10px; /* espaçamento entre os itens */
+  }
+  
+  .card-0 {
+    grid-column: 1 / 3; /* Coluna 1 até 2 */
+    grid-row: 1; /* Linha 1 */
+  }
+  
+  .card-1 {
+    grid-column: 3; /* Coluna 3 */
+    grid-row: 1 / 3; /* Linha 1 até 2 */
+  }
+  
+  .card-2 {
+    grid-column: 1; /* Coluna 1 */
+    grid-row: 2; /* Linha 2 */
+  }
+  
+  .card-3 {
+    grid-column: 2; /* Coluna 2 */
+    grid-row: 2; /* Linha 2 */
+  }
+  
+  .card-4 {
+    grid-column: 1; /* Coluna 1 */
+    grid-row: 3 / 5; /* Linha 3 até 4 */
+  }
+  
+  .card-5 {
+    grid-column: 2 / 4; /* Coluna 2 até 3 */
+    grid-row: 3; /* Linha 3 */
+  }
+  
+  .card-6 {
+    grid-column: 2; /* Coluna 2 */
+    grid-row: 4; /* Linha 4 */
+  }
+  
+  .card-7 {
+    grid-column: 3; /* Coluna 3 */
+    grid-row: 4; /* Linha 4 */
+  }
+  
+  .card {
+    position: relative;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card-comments img{
+   margin-right: 3px;
+   cursor: pointer;
+  }
+  .card-likes img{
+    margin-right: 3px;
+    cursor: pointer;
+  }
+  .card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+  }
+  
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    display: inline;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 15px;
+}
+
+
+
+.head{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 75%;
+}
+h2{
+    width: 80%;
+    text-align: start;
+}
+.login{
+    width: 20%;
+    border-radius: 5px;
+    background-color: black;
+    color:white;
+
+}
+
+.titulo{
+    font-size: 18px;
+    text-align: center;
+    border-top: 0.5px solid silver;
+    border-bottom: 0.5px solid silver ;
+    padding: 8px;
+    width: 75%;
+    margin-bottom: 10px;
+}
+.footer{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: black;
+    color: #f8f8f8;
+    height: 80px;
+    padding: 5px;
+    width: 80%;
+    margin-top: 10px;
+     
+}
+
+.brand{
+   width: 33%;
+}
+.socials{
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+}
+.corporation{
+    text-align: center;
+    width: 33%;
+}
+
+.input-login{
+  display: flex;
+  flex-direction: column;
+}
+.input-login > input{
+  border-radius: 5px;
+  border:0.5px solid silver;
+  padding:5px;
+}
+h3{
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+
+.input-comments{
+  width: 100%;
+  border: solid 1px white;
+  padding: 5px;
+  outline: none;
+  transition: border 0.3s;
+}
+.input-comments:focus{
+  border: none;
+  width: 100%;
+}
+
+.image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-comments {
+  width: 100%;
+  height: auto;
+  max-width: 100%; 
+}
+
+.react-comments {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+.react-comments img{
+  cursor: pointer;
+  margin-right: 3px;
+}
+.react-comments label{
+
+  margin-left: 2px;
+}
+.text-comments {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  border-bottom:solid 1px black;
+ border-top: solid 1px black;
+}
+
+.text-comments img {
+  cursor: pointer;
+}
+
+.container-buttons{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.btn-cancel{
+  border: solid 1px silver;
+  border-radius: 5px;
+  width: 40%;
+}
+.btn-entrar{
+  border: solid 1px silver;
+  color: #fff;
+  background-color: black;
+  border-radius: 5px;
+  width: 40%;
+}
